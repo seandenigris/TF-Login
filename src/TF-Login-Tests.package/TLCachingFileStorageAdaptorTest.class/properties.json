@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TLFileStorageAdaptorTest",
+	"category" : "TF-Login-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLCachingFileStorageAdaptorTest",
+	"type" : "normal"
+}

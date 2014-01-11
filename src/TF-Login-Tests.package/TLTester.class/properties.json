@@ -1,0 +1,27 @@
+{
+	"commentStamp" : "",
+	"super" : "WAComponent",
+	"category" : "TF-Login-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"AllowEmptyPasswords",
+		"AllowUsernameChange",
+		"ConfirmationTimeoutMinutes",
+		"PasswordResetEmailSender",
+		"RegistrationConfirmationEmailSender",
+		"SendRegistrationConfirmationEmail",
+		"SetLoginFailhander",
+		"SetLoginFilter",
+		"Testing",
+		"UsernameReminderEmailSender"
+	],
+	"instvars" : [
+		"loginComponent",
+		"editAccountComponent",
+		"children",
+		"loggedIn"
+	],
+	"name" : "TLTester",
+	"type" : "normal"
+}
