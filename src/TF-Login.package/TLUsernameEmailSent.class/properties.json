@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TLAcknowledgementComponent",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLUsernameEmailSent",
+	"type" : "normal"
+}

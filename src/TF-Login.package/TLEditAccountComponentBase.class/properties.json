@@ -1,0 +1,28 @@
+{
+	"commentStamp" : "",
+	"super" : "TLComponent",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"newEmail",
+		"newPassword",
+		"newPasswordConfirm",
+		"currentPassword",
+		"emailChangeConfirmationEmailSender",
+		"newUsername",
+		"accountChangeConfirmationEmailSender",
+		"emailResult",
+		"loginComponent",
+		"accountChangeSubmitFailedComponent",
+		"accountChangeSubmittedComponent",
+		"newPasswordMismatch",
+		"usernameExists",
+		"passwordIsInvalid",
+		"passwordValidationError",
+		"usernameChangeDisallowed"
+	],
+	"name" : "TLEditAccountComponentBase",
+	"type" : "normal"
+}

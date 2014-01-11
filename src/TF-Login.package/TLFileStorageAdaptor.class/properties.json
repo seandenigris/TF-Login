@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TLStorageAdaptor",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"StorageAdaptorsByName"
+	],
+	"instvars" : [
+		"db",
+		"appName",
+		"rw"
+	],
+	"name" : "TLFileStorageAdaptor",
+	"type" : "normal"
+}

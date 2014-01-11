@@ -1,0 +1,3 @@
+as yet unclassified
+accountChangeSubmitFailedComponent
+	^ accountChangeSubmitFailedComponent ifNil: [self defaultAccountChangeSubmitFailedComponent]

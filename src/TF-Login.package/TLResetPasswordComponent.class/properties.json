@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TLResetPasswordComponentBase",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLResetPasswordComponent",
+	"type" : "normal"
+}

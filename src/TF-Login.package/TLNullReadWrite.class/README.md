@@ -1,0 +1,1 @@
+I am a replacement for TLReadWrite that performs no locking. I can be used when a resource may need locking in some circumstances and not in others.

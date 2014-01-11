@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TLComponent",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pendingPasswordReset",
+		"username",
+		"pswd",
+		"usernameMatchError",
+		"pswdconf",
+		"passwordMatchError",
+		"resetSuccessful",
+		"loginComponent",
+		"passwordEmptyError",
+		"passwordValidationErrorText"
+	],
+	"name" : "TLResetPasswordComponentBase",
+	"type" : "normal"
+}

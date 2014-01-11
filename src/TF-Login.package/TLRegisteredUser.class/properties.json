@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TLUser",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"encpswd"
+	],
+	"name" : "TLRegisteredUser",
+	"type" : "normal"
+}

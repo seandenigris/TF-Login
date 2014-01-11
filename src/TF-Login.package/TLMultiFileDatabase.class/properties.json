@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"storageDirectoryName",
+		"maxEntryCount",
+		"matchBlock",
+		"dirlist",
+		"directoryDepth",
+		"maxKeySize",
+		"maxFiles",
+		"rw"
+	],
+	"name" : "TLMultiFileDatabase",
+	"type" : "normal"
+}

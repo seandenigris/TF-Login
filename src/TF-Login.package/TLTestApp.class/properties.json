@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WAComponent",
+	"category" : "TF-Login-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"loginComponent",
+		"editingAccount",
+		"editAccountComponent",
+		"children",
+		"ajaxLoginComponent",
+		"popup"
+	],
+	"name" : "TLTestApp",
+	"type" : "normal"
+}

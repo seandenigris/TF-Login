@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TLUserTest",
+	"category" : "TF-Login-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLRegisteredUserTest",
+	"type" : "normal"
+}

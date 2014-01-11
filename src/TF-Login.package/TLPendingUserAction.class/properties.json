@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TLPendingUser",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"callbackBlock"
+	],
+	"name" : "TLPendingUserAction",
+	"type" : "normal"
+}

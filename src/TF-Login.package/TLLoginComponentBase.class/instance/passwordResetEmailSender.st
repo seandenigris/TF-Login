@@ -1,0 +1,3 @@
+email-confirmation
+passwordResetEmailSender
+	^ passwordResetEmailSender

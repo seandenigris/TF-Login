@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASystemConfiguration",
+	"category" : "TF-Login-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLTestAppConfiguration",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TF-Login-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dateTime",
+		"location"
+	],
+	"name" : "TLTestAppLoginHistoryItem",
+	"type" : "normal"
+}

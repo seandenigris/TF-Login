@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TLComponent",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"emailSender",
+		"loginComponent",
+		"usernameEmailSentComponent",
+		"username"
+	],
+	"name" : "TLForgotUsernameComponent",
+	"type" : "normal"
+}

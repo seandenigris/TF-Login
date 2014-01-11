@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TLRegisteredUser",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"confirmationDeadline",
+		"regId"
+	],
+	"name" : "TLPendingUser",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TLRegisterComponent",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLAjaxRegisterComponent",
+	"type" : "normal"
+}

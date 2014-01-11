@@ -1,0 +1,3 @@
+default-components
+defaultRegistrationSubmitFailedComponent
+	^ TLRegistrationSubmitFailed

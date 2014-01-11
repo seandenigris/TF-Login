@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TLNullReadWrite",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"monitor",
+		"readerCount",
+		"busy",
+		"preferWriters"
+	],
+	"name" : "TLReadWrite",
+	"type" : "normal"
+}

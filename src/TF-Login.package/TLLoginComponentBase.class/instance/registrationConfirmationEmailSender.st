@@ -1,0 +1,3 @@
+email-confirmation
+registrationConfirmationEmailSender
+	^ registrationConfirmationEmailSender

@@ -1,0 +1,3 @@
+private
+maxFilesDefault
+	^ 63

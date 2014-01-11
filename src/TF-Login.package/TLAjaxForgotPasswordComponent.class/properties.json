@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TLForgotPasswordComponent",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLAjaxForgotPasswordComponent",
+	"type" : "normal"
+}

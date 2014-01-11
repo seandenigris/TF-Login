@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WASystemConfiguration",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLConfiguration",
+	"type" : "normal"
+}

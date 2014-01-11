@@ -1,0 +1,3 @@
+I format the reset password component content using an HTML table. I am an example of how to customize the reset password rendering.
+
+To use your own form, subclass TFResetPasswordComponentBase, implement #renderSuccessFormContent: and #renderPasswordResetFormContent: using me as a guide, and set your TLLoginComponent to use your reset password component using TLLoginComponent>>#forgotPasswordComponent: in your application #initialize method.

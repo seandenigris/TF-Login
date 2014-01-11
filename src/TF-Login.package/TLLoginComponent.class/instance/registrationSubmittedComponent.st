@@ -1,0 +1,3 @@
+registration
+registrationSubmittedComponent
+	^ registrationSubmittedComponent ifNil: [self defaultRegistrationSubmittedComponent ]

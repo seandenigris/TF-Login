@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TLLoginComponentBase",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"captchaComponent",
+		"confirmationTimeout",
+		"children",
+		"registrationSubmitFailedComponent",
+		"registrationSubmittedComponent",
+		"forgotPasswordComponent",
+		"forgotUsernameComponent",
+		"defaultRegistrationSubmitFailedComponent",
+		"resetPasswordComponent",
+		"authenicationErrorText"
+	],
+	"name" : "TLLoginComponent",
+	"type" : "normal"
+}
