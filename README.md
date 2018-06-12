@@ -1,5 +1,4 @@
 # TFLogin Guide
-27 Feb 2011
 
 Note that the tests included in the TFLogin package require the following packages to run:
 
