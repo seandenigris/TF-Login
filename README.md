@@ -1,3 +1,33 @@
+Originally from http://www.squeaksource.com/TFLogin.html, but tests were failing. It turns out that this was written for pharo 1.1.1. I wanted to use pharo 2, so I refactored the parts that didn't work in pharo 2. The following are the changes i made:
+
+- ReadStream was updated to use Fuel.
+- The tests now only support ZnClient and ZnServer.
+
+All tests now pass, except for testCapacity test. I will look at this in the next week, but I thought it would be worthwhile to get it out.
+
+This package provides basic user authentication, registration, and account management for Seaside.
+
+Features include:
+
+- User login component with username and password text fields, forgot username, forgot password, register, and login buttons.
+- User registration component with optional BowWave reCaptcha spambot protection.
+- Edit account settings component allows user to change username, password, email address and application-specific properties.
+- Optional email confirmation for registration and account changes. Email content is provided by the host application. Examples are included.
+- Multi-part HTML/plain text email.
+- Configurable confirmation email timeouts and cookie retention periods.
+- Forgot username and forgot password support.
+- New password validation by the host application (to enforce password rules like minimum-length, etc.)
+- Options to allow empty passwords, remember username in cookie, and automatic login on return to the website.
+- Host application can provide login filter block for such things as disabling accounts or limiting login frequency.
+- Host application can use TFLogin's email confirmation mechanism for application-specific purposes. Additional user-related objects may be included in the account edit form.
+- Persistence is provided by a storage adaptor that can be replaced with the persistence mechanism of your choice. The provided default file storage adaptor scales to 100,000 users. Each user's information is saved in a separate versioned file.
+- An application properties dictionary is provided that allows you to store and retrieve additional objects along with the user account information.
+- All settings are available in the Seaside configuration page. Test/demo application included.
+- TFLogin Guide document included (see below).
+- Tested with Seaside 3.0.3 and Pharo 1.1.1. Email does NOT work with prior versions of Seaside.
+
+All feedback is welcome.
+
 # TFLogin Guide
 
 Note that the tests included in the TFLogin package require the following packages to run:
