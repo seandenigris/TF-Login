@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "SeanDeNigris 6/11/2018 21:01",
+	"super" : "PackageManifest",
+	"category" : "TF-Login",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ManifestTFLogin",
+	"type" : "normal"
+}
