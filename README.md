@@ -417,7 +417,7 @@ Here is an example onRegistration block in which userObjects are saved in the pe
 		true]
 ```
 
-Appearance
+## Appearance
 
 The components used by TFLogin are generally quite plain. CSS class names are present to allow you to use whatever CSS you need to allow them to blend in with your application.
 
