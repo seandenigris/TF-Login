@@ -44,11 +44,18 @@ Take a look at the TLTestApp to see an example of the steps below.
 
 There are a number of steps to introducing TFLogin authentication to an existing Seaside application. They are described below:
 
-1. Add the following lines to your application class initialization method:
+1. Create `MyCoolComponent class>>#initialize` like the following:
 ```smalltalk
-    application preferenceAt: #sessionClass put: TLSession.
-    application configuration parents add: TLConfiguration instance.
-    application configuration parents add: WAEmailConfiguration instance.
+initialize
+	
+	| application |
+	application := WAAdmin register: self asApplicationAt: self handlerName.
+	application preferenceAt: #sessionClass put: TLSession.
+
+	"Add TL-specific configuration options"
+	application configuration
+		addParent: TLConfiguration instance;
+		addParent: WAEmailConfiguration instance
 ```
 2. If you plan to use reCaptcha to protect your registration form from spammers, then you will need the BowWave reCaptcha package that you can obtain by evaluating:
 ```smalltalk
@@ -58,17 +65,17 @@ There are a number of steps to introducing TFLogin authentication to an existing
             package: 'BowWave-Captcha-Recaptcha';
             load.
 ```
-Then add lines like the following to your application class initialization method containing your public and private reCaptcha keys that you obtain free from http://www.google.com/recaptcha.
+Then add lines like the following to `MyCoolComponent class>>#initialize`, substituting your public and private reCaptcha keys that you obtain free from http://www.google.com/recaptcha.
 ```smalltalk	
     application configuration parents add: BWRecaptchaConfiguration instance.
-    application preferenceAt: #publicKey put: 'your-public-key'.
-    application preferenceAt: #privateKey put: 'your-private-key'.
+    application preferenceAt: #publicKey put: '{{your-public-key}}'.
+    application preferenceAt: #privateKey put: '{{your-private-key}}'.
 ```
 Note that these preferences can also be set using your application's Seaside configuration page.
 
 If you do not plan to use reCaptcha spambot protection, then it is not necessary to install the BowWave package.
 
-3. You can also set TFLogin preferences in the initialize method if you wish, or you can set the using the Seaside application config page.  Here is an example of what can be done in the inbitialize method:
+3. You can also set TFLogin preferences in `MyCoolComponent class>>#initialize` if you wish, or you can set the using the Seaside application config page.  Here is an example of what can be done in the initialize method:
 ```smalltalk
 	application preferenceAt: #sendRegistrationConfirmationEmail put: true.
 	application preferenceAt: #confirmationTimeoutMinutes put: 10.
@@ -83,8 +90,11 @@ If you do not plan to use reCaptcha spambot protection, then it is not necessary
 ```	
 Note that these preferences can also be set using your application's Seaside configuration page.
 
-4. In your application's initialize method (not the class initialize method as described above) put the following to make the TFLogin components known to your application:
+4. In your component's instance-side `#initialize` method (not the class initialize method as described above) put the following to make the TFLogin components known to your application:
 ```smalltalk
+initialize
+
+	super initialize.
 	loginComponent := (TLLoginComponent appName: '<your-app-name>').
 	loginComponent onAnswer: [ :user | user ifNotNilDo: [ :u | self loggedIn: u ] ].
 	self children add: loginComponent.
@@ -94,6 +104,7 @@ Note that these preferences can also be set using your application's Seaside con
 ```
 If you don't already have one, you will need a children method that looks like this:
 ```smalltalk
+children
 	^ children ifNil: [ children := Bag new ]
 ```	
 
@@ -191,15 +202,15 @@ sendEmailTo: toAddress subject: subj text: textBody html: htmlBody
 	^ true	
 ```
 
-8. In your application's  renderContentOn: you should render your loginComponent or editAccountComponent (from step 4 above) as embedded components. (They also support being "called" modally, but this functionality has not been tested.)
+8. In your application's `#renderContentOn:` you should render your loginComponent or editAccountComponent (from step 4 above) as embedded components. (They also support being "called" modally, but this functionality has not been tested.)
 
 If the TLSession>>#user is nil, it means no-one is logged in and you might want to use this to determine whether to display the loginComponent. 
 
-The editAccountComponent is generally displayed in response to an application-provided button. In step 4 we assumed that ths button would set the editingAccount variable to true and that this would cause the editAccountComponent to be rendered. You may wish to use another method to determine how to display the editAccountComponent.
+The editAccountComponent is generally displayed in response to an application-provided button. In step 4 we assumed that this button would set the `editingAccount` variable to true and that this would cause the `editAccountComponent` to be rendered. You may wish to use another method to determine how to display the `editAccountComponent`.
 
-The loginComponent will answer when a user has successfully logged in. This is handled in the block specified in step 4 above. In that block we call an application method called loggedIn. You can do whatever you wish in that method.
+The `loginComponent` will answer when a user has successfully logged in. This is handled in the block specified in step 4 above. In that block we call an application method called `#loggedIn`. You can do whatever you wish in that method.
 
-The editAccountComponent will answer when new values have been entered and the user has supplied the correct password or has clicked the cancel button. In step 4 above the block specified for this sets the editAccount variable to false, which we are assuming will cause the editAccountComponent not to be rendered.
+The `editAccountComponent` will answer when new values have been entered and the user has supplied the correct password or has clicked the cancel button. In step 4 above the block specified for this sets the `editAccount` variable to false, which we are assuming will cause the `editAccountComponent` not to be rendered.
 	
 	
 ## AJAX
