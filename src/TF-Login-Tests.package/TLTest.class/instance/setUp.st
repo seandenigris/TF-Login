@@ -7,7 +7,7 @@ setUp
        		self assert: (self server isRunning ) description: 'This test needs a Seaside server.'.].
 
 
-	self assert: ((Smalltalk at: #Soup ifAbsent: [nil]) isNil not) description: 'This test requires Soup: http://www.squeaksource.com/Soup'.
+	self assert: ((Smalltalk at: #Soup ifAbsent: [nil]) isNil not) description: 'This test requires Soup: http://smalltalkhub.com/#!/~PharoExtras/Soup'.
 	self assert: ((Smalltalk at: #ZnClient ifAbsent: [nil]) isNil not) description: 'This test requires Zinc http://www.squeaksource.com/ZincHTTPComponents'.
 	
 	"Gofer it

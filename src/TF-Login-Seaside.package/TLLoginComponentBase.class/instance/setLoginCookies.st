@@ -10,7 +10,7 @@ setLoginCookies
 						ifTrue: [
 							self rememberPasswordInCookie: (self authenticationManager registeredUserFor: user) encryptedPassword  ]
 						ifFalse: [
-							pcookie ifNotNilDo: [ :cookie |
+							pcookie ifNotNil: [ :cookie |
 								self session requestContext response deleteCookie: cookie]]]
 				ifFalse: [
 					self deleteLoginCookies ]
