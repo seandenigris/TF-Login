@@ -1,4 +1,4 @@
 public
 fileNamesBeginMatching: aWildcardString
 	rw sharedRead: [
-		^ (self directoryFor: aWildcardString) fileNamesMatching: aWildcardString ]
+		^ (self directoryFor: aWildcardString) filesMatching: aWildcardString ]
