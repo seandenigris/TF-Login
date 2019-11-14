@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TLAcknowledgementComponent",
+	"category" : "TF-Login-Seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLPasswordEmailSent",
+	"type" : "normal"
+}

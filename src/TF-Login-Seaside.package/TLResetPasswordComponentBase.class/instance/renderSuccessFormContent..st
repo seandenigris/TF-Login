@@ -1,0 +1,4 @@
+rendering
+renderSuccessFormContent: html
+
+	self subclassResponsibility

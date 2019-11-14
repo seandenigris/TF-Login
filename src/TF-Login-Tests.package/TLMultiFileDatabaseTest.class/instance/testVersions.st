@@ -12,10 +12,10 @@ testVersions
 		obj2 := 1000 + n..
 		db saveObject: obj2 withName: '2'].
 	
-	self assert: (db lastSavedFileNamed: '1') = '1.42'.
+	self assert: (db lastSavedFileNamed: '1') basename = '1.42'.
 	self assert: obj1 = 42.
 
-	self assert: (db lastSavedFileNamed: '2') = '2.43'.
+	self assert: (db lastSavedFileNamed: '2') basename = '2.43'.
 	self assert: obj2 = 1042.
 
 	db deleteFilesNamed: '1'.

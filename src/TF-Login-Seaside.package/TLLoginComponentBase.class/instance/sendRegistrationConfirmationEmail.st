@@ -1,0 +1,3 @@
+email-confirmation
+sendRegistrationConfirmationEmail 
+	^ self application preferenceAt: #sendRegistrationConfirmationEmail
