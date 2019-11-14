@@ -8,5 +8,5 @@ lastLoginFormatted
 	self lastLogin printHMSOn: stream.
 	stream
 		nextPutAll: ' ';
-		nextPutAll: self lastLogin timeZoneAbbreviation.
+		nextPutAll: (self lastLogin timeZoneAbbreviation ifNil: [ self lastLogin timeZone offset asString ]).
 	^ stream contents

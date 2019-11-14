@@ -5,4 +5,4 @@ renderNewPasswordInput: html
 		id: 'editacctnewpswd';
 		callback: [ :v | newPassword := v ];
 		class: 'editaccountinput';
-		exampleText: newPassword
+		placeholder: newPassword

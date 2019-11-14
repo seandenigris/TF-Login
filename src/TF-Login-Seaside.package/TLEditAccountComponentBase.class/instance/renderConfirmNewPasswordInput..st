@@ -5,4 +5,4 @@ renderConfirmNewPasswordInput: html
 		id: 'editacctnewpswdconf';
 		callback: [ :v | newPasswordConfirm := v ];
 		class: 'editaccountinput';
-		exampleText: newPasswordConfirm
+		placeholder: newPasswordConfirm
