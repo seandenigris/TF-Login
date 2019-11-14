@@ -1,3 +1,3 @@
 as yet unclassified
 generateRegId
-	^ UUID new primMakeUUID asString36.
+	^ UUIDGenerator next asString36.

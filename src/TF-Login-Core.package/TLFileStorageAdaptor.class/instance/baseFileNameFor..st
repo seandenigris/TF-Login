@@ -1,3 +1,3 @@
 private
 baseFileNameFor: aFileName
-	^ aFileName allButLast: (aFileName size) - (aFileName lastIndexOf: $.) + 1
+	^ aFileName basename allButLast: (aFileName basename size) - (aFileName basename lastIndexOf: $.) + 1
