@@ -1,3 +1,9 @@
+# Nov 2019
+
+Ported to Seaside 3.3.3 on Pharo 7 by Pierce Ng.
+
+----
+
 Originally from http://www.squeaksource.com/TFLogin.html, but tests were failing. It turns out that this was written for pharo 1.1.1. I wanted to use pharo 2, so I refactored the parts that didn't work in pharo 2. The following are the changes i made:
 
 - ReadStream was updated to use Fuel.
