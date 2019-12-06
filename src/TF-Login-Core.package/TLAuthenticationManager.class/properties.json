@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TF-Login-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Lock",
+		"PendingActions"
+	],
+	"instvars" : [
+		"storageAdaptor",
+		"appName",
+		"confirmationTimeout",
+		"loginComponent"
+	],
+	"name" : "TLAuthenticationManager",
+	"type" : "normal"
+}

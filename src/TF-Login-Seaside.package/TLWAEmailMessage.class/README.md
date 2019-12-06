@@ -1,0 +1,1 @@
+I am a stand-in for WAEmailMessage supporting multi-part MIME messages until Seaside can take advantage of Pharo issue 3509 (Multi-part MIME support for MailMessage).

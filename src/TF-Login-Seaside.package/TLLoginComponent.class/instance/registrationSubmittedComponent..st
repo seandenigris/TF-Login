@@ -1,0 +1,3 @@
+registration
+registrationSubmittedComponent: aWAComponent
+	registrationSubmittedComponent := aWAComponent 

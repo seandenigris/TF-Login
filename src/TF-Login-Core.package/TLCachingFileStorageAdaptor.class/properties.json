@@ -1,0 +1,37 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TLFileStorageAdaptor",
+	"category" : "TF-Login-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"AllUserIdsRequests",
+		"AllUsernamesRequests",
+		"Evictions",
+		"Misses",
+		"Requests",
+		"Writes"
+	],
+	"instvars" : [
+		"allUserIds",
+		"allUsernames",
+		"lru",
+		"usersById",
+		"usersByUsername",
+		"misses",
+		"requests",
+		"allUserIdsRequests",
+		"allUsernamesRequests",
+		"queue",
+		"processing",
+		"lock",
+		"writes",
+		"cacheEvictions",
+		"evictions",
+		"maxLRUSize",
+		"userIdsByUsernames",
+		"backgroundProcess"
+	],
+	"name" : "TLCachingFileStorageAdaptor",
+	"type" : "normal"
+}

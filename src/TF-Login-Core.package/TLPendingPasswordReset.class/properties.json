@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TLPendingUser",
+	"category" : "TF-Login-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TLPendingPasswordReset",
+	"type" : "normal"
+}

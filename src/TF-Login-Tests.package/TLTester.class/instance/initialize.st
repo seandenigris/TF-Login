@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 initialize
 	"self initialize."
 	super initialize.
@@ -9,7 +9,7 @@ initialize
 
 	loginComponent := TLLoginComponent appName: self class appName.
 	loginComponent authenticationManager storageAdaptor: (TLCachingFileStorageAdaptor name: self class appName).
-	loginComponent onAnswer: [ :user | user ifNotNilDo: [ : u |  ] ].
+	loginComponent onAnswer: [ :user | user ifNotNil: [ : u |  ] ].
 	self class setPasswordValidator ifTrue: [
 		loginComponent passwordValidator: [ :pswd |  pswd size < 6 ifTrue: [ 'password too short'] ifFalse: [ nil ] ] ].
 	self class setLoginFilter ifTrue: [

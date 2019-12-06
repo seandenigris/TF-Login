@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "TF-Login-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"includeInAccountDetails"
+	],
+	"name" : "TLApplicationPropertyItem",
+	"type" : "normal"
+}

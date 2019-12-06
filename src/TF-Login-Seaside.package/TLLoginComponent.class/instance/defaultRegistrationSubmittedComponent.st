@@ -1,0 +1,3 @@
+default-components
+defaultRegistrationSubmittedComponent
+	^ TLRegistrationSubmitted

@@ -1,0 +1,1 @@
+I am a caching version of the TLFileStorageAdaptor. I maintain a list of all userIds, userNames, a write-through LRU cache of user objects. I use a background thread to perform queued writes so that my caller doesn't have to wait for disk access.

@@ -7,7 +7,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #sendRegistrationConfirmationEmail);
 								callback: [ :v | 	self application preferenceAt: #sendRegistrationConfirmationEmail put: v ].
 							view text: 'Registration requires email confirmation']].
@@ -15,7 +15,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #confirmEmailChangeViaEmail);
 								callback: [ :v | 	self application preferenceAt: #confirmEmailChangeViaEmail put: v ].
 							view text: 'Email address change requires email confirmation']].
@@ -23,7 +23,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #confirmAccountChangesViaEmail);
 								callback: [ :v | 	self application preferenceAt: #confirmAccountChangesViaEmail put: v ].
 							view text: 'All account changes require email confirmation']].
@@ -31,7 +31,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #allowEmptyPasswords);
 								callback: [ :v | 	self application preferenceAt: #allowEmptyPasswords put: v ].
 							view text: 'Allow passwords to be empty.']].
@@ -39,7 +39,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #allowUsernameChange);
 								callback: [ :v | 	self application preferenceAt: #allowUsernameChange put: v ].
 							view text: 'Allow users to change their usernames.']].
@@ -47,7 +47,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #allowRememberUsername);
 								callback: [ :v |
 									self application preferenceAt: #allowRememberUsername put: v ].
@@ -56,7 +56,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #allowAutomaticLogin);
 								callback: [ :v | 
 									self application preferenceAt: #allowAutomaticLogin put: v ].
@@ -65,7 +65,7 @@ renderPrefs: view
 					view tableRow: [
 						view tableData: [
 							view checkbox
-								submitOnClick;
+								onChange: 'return submitForm(this)';
 								value: 	(self application preferenceAt: #useRecaptchaInRegistrationForm);
 								callback: [ :v | self application preferenceAt: #useRecaptchaInRegistrationForm put: v ].							
 							view text: 'Include reCAPTCHA spam prevention in registration form']].
@@ -78,7 +78,7 @@ renderPrefs: view
 								value: (self application preferenceAt: #UsernamePasswordRememberDays);
 								callback: [ :v | self application preferenceAt: #UsernamePasswordRememberDays put: v ].
 							view button
-								submitOnClick
+								onChange: 'return submitForm(this)';
 								with: 'Set']].
 
 					view tableRow: [
@@ -89,7 +89,7 @@ renderPrefs: view
 								value: (self application preferenceAt: #confirmationTimeoutMinutes);
 								callback: [ :v | self application preferenceAt: #confirmationTimeoutMinutes put: v ].
 							view button
-								submitOnClick
+								onChange: 'return submitForm(this)';
 								with: 'Set']].
 								.
 					view tableRow: [
@@ -100,7 +100,7 @@ renderPrefs: view
 								value: (self application preferenceAt: #minimumPasswordLength);
 								callback: [ :v | self application preferenceAt: #minimumPasswordLength put: v ].
 							view button
-								submitOnClick
+								onChange: 'return submitForm(this)';
 								with: 'Set']].
 						
 					view tableRow: [
@@ -111,7 +111,7 @@ renderPrefs: view
 								value: (self application preferenceAt: #maximumFailedLoginAttempts);
 								callback: [ :v | self application preferenceAt: #maximumFailedLoginAttempts put: v ].
 							view button
-								submitOnClick
+								onChange: 'return submitForm(this)';
 								with: 'Set']].
 
 					"view tableRow: [

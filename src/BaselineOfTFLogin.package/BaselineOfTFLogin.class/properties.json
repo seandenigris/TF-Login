@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PierceNg 11/15/2019 19:40",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfTFLogin",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfTFLogin",
+	"type" : "normal"
+}

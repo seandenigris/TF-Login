@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "TLComponent",
+	"category" : "TF-Login-Seaside",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"user",
+		"pswd",
+		"confpswd",
+		"email",
+		"captchaComponent",
+		"captchaVerified",
+		"userExists",
+		"passwordsMatch",
+		"loginComponent",
+		"passwordValidationError",
+		"passwordEmpty"
+	],
+	"name" : "TLRegisterComponentBase",
+	"type" : "normal"
+}

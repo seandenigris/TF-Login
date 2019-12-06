@@ -1,0 +1,1 @@
+I am a stand-in for MailMessage to add multi-part MIME support until issue 3509 (Multi-part MIME support for MailMessage) is incuded in Pharo.

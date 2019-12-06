@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TF-Login-Core",
+	"classinstvars" : [
+		"userIdGenerator"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"userId",
+		"lastLogin",
+		"lastLoginFrom",
+		"username",
+		"email",
+		"loginCount",
+		"applicationProperties"
+	],
+	"name" : "TLUser",
+	"type" : "normal"
+}

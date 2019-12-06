@@ -1,4 +1,4 @@
 as yet unclassified
 setUp
-	authenticationManager := TLAuthenticationManager name: self name.
+	authenticationManager := TLAuthenticationManager name: self class name.
 	

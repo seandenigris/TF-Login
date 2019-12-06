@@ -3,13 +3,13 @@ initialize
 	
 	super initialize.
 	loginComponent := TLLoginComponent appName: 'LoginTestApp'.
-	loginComponent onAnswer: [ :user | user ifNotNilDo: [ : u | self loggedIn: u ] ].
+	loginComponent onAnswer: [ :user | user ifNotNil: [ : u | self loggedIn: u ] ].
 	loginComponent passwordValidator: [ :pswd | self validatePassword: pswd ].
 	loginComponent onLogin: [ :user | self loginFilter: user ].
 	loginComponent onLoginFail: [ :username :address | self loginFailedUser: username from: address ].
 
 	ajaxLoginComponent := TLAjaxLoginComponent appName: 'LoginTestApp'.
-	ajaxLoginComponent onAnswer: [ :user | user ifNotNilDo: [ : u | self loggedIn: u ] ].
+	ajaxLoginComponent onAnswer: [ :user | user ifNotNil: [ : u | self loggedIn: u ] ].
 	ajaxLoginComponent passwordValidator: [ :pswd | self validatePassword: pswd ].
 	ajaxLoginComponent onLogin: [ :user | self loginFilter: user ].
 	ajaxLoginComponent onLoginFail: [ :username :address | self loginFailedUser: username from: address ].

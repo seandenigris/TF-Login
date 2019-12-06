@@ -1,0 +1,3 @@
+default-components
+defaultForgotPasswordComponent
+	^ TLForgotPasswordComponent 
